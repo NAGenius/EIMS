@@ -87,11 +87,14 @@ namespace EIMS
 
         private void ClearInfo()
         {
+            txtEmpNo.Text = "";
             txtFirstName.Text = "";
             txtLastName.Text = "";
             txtTelephone.Text = "";
             txtAddress.Text = "";
             rbMan.Checked = true;
+            dtpHireDate.Value = new DateTime(2025, 1, 1);
+            dtpBirthday.Value = new DateTime(2000, 1, 1);
             empNo = -1;
             lblOperation.Text = "添加";
             txtEmpNo.ReadOnly = false;
@@ -112,7 +115,14 @@ namespace EIMS
                 txtEmpNo.Text = item.SubItems[0].Text;
                 txtFirstName.Text = item.SubItems[1].Text;
                 txtLastName.Text = item.SubItems[2].Text;
-                rbMan.Checked = item.SubItems[3].Text == "男" ? true : false;
+                if(item.SubItems[3].Text == "男")
+                {
+                    rbMan.Checked = true;
+                }
+                else
+                {
+                    rbWoman.Checked = true;
+                }
                 dtpHireDate.Value = DateTime.ParseExact(item.SubItems[4].Text, "yyyy-MM-dd", null);
                 dtpBirthday.Value = DateTime.ParseExact(item.SubItems[5].Text, "yyyy-MM-dd", null);
                 txtAddress.Text = item.SubItems[6].Text;

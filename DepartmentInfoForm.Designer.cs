@@ -239,7 +239,7 @@
             this.Name = "DepartmentInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "部门信息管理界面";
-            this.Load += new System.EventHandler(this.EmployeeInfoForm_Load);
+            this.Load += new System.EventHandler(this.DepartmentInfoForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -108,11 +108,7 @@ namespace EIMS
                 DataTable dt = DataAccessLayer.ExecuteQuery(query);
                 if(dt.Rows.Count == 0)
                 {
-                    MessageBox.Show("对不起，用户名不存在！");
-                }
-                else if (dt.Rows[0]["password"].ToString() != password)
-                {
-                    MessageBox.Show("对不起，密码不正确！");
+                    lblNote.Text = "用户名或密码错误";
                 }
                 else
                 {

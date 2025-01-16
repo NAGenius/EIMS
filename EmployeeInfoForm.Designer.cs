@@ -67,7 +67,7 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "名";
+            this.columnHeader2.Text = "姓";
             // 
             // lblOperation
             // 
@@ -190,7 +190,7 @@
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "性";
+            this.columnHeader3.Text = "名";
             // 
             // txtFirstName
             // 
@@ -279,7 +279,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 23);
             this.label3.TabIndex = 4;
-            this.label3.Text = "姓：";
+            this.label3.Text = "名：";
             // 
             // label2
             // 
@@ -300,7 +300,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "名：";
+            this.label1.Text = "姓：";
             // 
             // lblNote
             // 
@@ -373,6 +373,7 @@
             this.dtpHireDate.Name = "dtpHireDate";
             this.dtpHireDate.Size = new System.Drawing.Size(242, 30);
             this.dtpHireDate.TabIndex = 8;
+            this.dtpHireDate.Value = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
             // 
             // dtpBirthday
             // 
@@ -382,6 +383,7 @@
             this.dtpBirthday.Name = "dtpBirthday";
             this.dtpBirthday.Size = new System.Drawing.Size(242, 30);
             this.dtpBirthday.TabIndex = 7;
+            this.dtpBirthday.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // label7
             // 

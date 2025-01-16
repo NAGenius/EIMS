@@ -8,7 +8,7 @@ namespace EIMS
 {
     public partial class DepartmentInfoForm : Form
     {
-        private int deptNo;
+        private int deptNo = -1;
         public DepartmentInfoForm()
         {
             InitializeComponent();
@@ -79,7 +79,7 @@ namespace EIMS
             txtDeptNo.ReadOnly = false;
         }
 
-        private void EmployeeInfoForm_Load(object sender, EventArgs e)
+        private void DepartmentInfoForm_Load(object sender, EventArgs e)
         {
             DataBindInfo();
         }
